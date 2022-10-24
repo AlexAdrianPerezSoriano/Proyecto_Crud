@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  base_ejercicio:
+    image: "mcr.microsoft.com/mssql/server:2019-latest"
+    hostname: "base_ejercicio"
+    restart: always
+    ports: 
+        - 1434:1433
+    environment:
+      - ACCEPT_EULA="Y"
+      - SA_PASSWORD=c3890030-4fd1-4c98-8758-3eb861f569be
